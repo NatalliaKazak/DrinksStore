@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <title>Storage</title>
+        <script src="http://fe.it-academy.by/JQ/jquery.js"></script>
+        <link href='css.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    	<form action='#' method='post' id='form1'>
+    		<h2>Введите новый напиток</h2>
+           	<label for='dname-field'>Название напитка</label>
+            	<input type='text' class="formItem" name='dname' id='dname-field'>
+            <label for='ingredients-field'>Ингридиенты</label>
+            	<textarea type='text' class="formItem" name='ingredients' id='ingredients-field'></textarea>
+            <label for='receipt-field'>Способ приготовления</label>
+            	<textarea type='text' class="formItem" name='receipt' id='receipt-field'></textarea>
+           	<label for='alсohol-field'>Алкогольный</label>
+            	<input type='text' class="formItem" name='alсohol' id='alcohol-field'>
+            <div class='buttons'>
+            	<input type='button' id='addReceipt' class="formItem" value='Сохранить' >
+            </div>
+        </form>
+        <form action='#' method='post' >
+        	<h2>Получить рецепт напитка</h2>
+        	<label for='GetDrinksName-field'>Название напитка</label>	
+            	<input type='text' class="formItem" name='GetDrinksName' id='GetDrinksName-field'>
+            <label for='GetReceipt-field'>Рецепт напитка</label>	
+            	<textarea type='text' class="formItem" name='getreceipt' id='GetReceipt-field' rows='6'></textarea>
+            <div class='buttons'>
+            	<input type='button' class="formItem" id='getReceipt' value='Получить' >
+            </div>
+        </form>
+        	<form action="#" method="post" >
+        	<h2>Получить названия всех напитков</h2>
+            <label for='АllDrinksName-field'>Рецепт напитка</label>	
+            	<textarea type='АllDrinksName' class="formItem" name='АllDrinksName' id='АllDrinksName-field'></textarea>
+            <div class='buttons'>
+            	<input type='button' id='getAllNames' class="formItem" value='Получить' >
+            </div>
+        </form>
+        <form action='#' method='post'>'
+        	<h2>Удалить напиток</h2>
+        	<label for='DeleteDrinksName-field'>Название напитка</label>	
+            	<input type='text' name='DeleteDrinksName' class="formItem" id='DeleteDrinksName-field'>
+            <div class='buttons'>
+            	<input type='button' id='deleteReceipt' class="formItem" value='Удалить'>
+            </div>
+        </form>
+        <form action='#' method='post'>
+        	<h2>Очистить базу данных</h2>
+            <div class='buttons'>
+            	<input type='button' id='resetReceipts' class="formItem" value='Удалить' >
+            </div>
+        </form>  
+    <script src='script.js'></script>     
+    </body>
+</html>
